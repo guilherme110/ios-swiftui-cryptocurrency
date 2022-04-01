@@ -63,7 +63,7 @@ struct CardSaldoView: View {
                             .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
                     })
                     .frame(width: 80, height: 50)
-                    .overlay(RoundedRectangle(cornerRadius: 9).stroke(Color.white, lineWidth: 2))
+                    .overlay(RoundedRectangle(cornerRadius: 9).stroke(Color.grey200, lineWidth: 2))
                     .background(Color.lightBlue)
                     
                     Spacer()

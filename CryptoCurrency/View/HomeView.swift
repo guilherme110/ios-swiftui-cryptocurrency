@@ -20,7 +20,8 @@ struct HomeView: View {
                     .font(.custom("Quicksand-Bold", size: 20))
                     .foregroundColor(.grey500)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                    .padding([.top, .leading], 15.0)
+                    .padding(.top, 25.0)
+                    .padding(.leading, 15.0)
                     .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
                 Text("Sr. Guilherme Soares")
                     .font(.custom("Quicksand-Bold", size: 20))
@@ -31,20 +32,21 @@ struct HomeView: View {
                 
                 CardSaldoView()
                     .frame(width: view.size.width, height: 250, alignment: .top)
-                    .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.white, lineWidth: 15))
+                    .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.grey200, lineWidth: 15))
                 
                 TesteCarroselView(
-                    spacing: 25,
-                    itemsData: [TestStruct(), TestStruct(), TestStruct(), TestStruct()],
-                    zoomFactor: 0.8
+                    spacing: -50,
+                    itemsData: transacoes,
+                    zoomFactor: 0.65
                 ) { itemData in
-                    // this view is wrapped in VStack with proper width
-                    CardTransacoesView()
+                    CardTransacaoView(transacao: itemData)
                 }
-                .frame(width: view.size.width, height: 200)
+                .frame(width: view.size.width, height: 150)
+                .padding(.top, 30)
             }
-            
         }
+        .background(Color.grey200)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

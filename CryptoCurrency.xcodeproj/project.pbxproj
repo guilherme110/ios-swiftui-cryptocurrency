@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F92D9C7627F66634007152EB /* CardTransacaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92D9C7527F66634007152EB /* CardTransacaoView.swift */; };
+		F92D9C7927F67254007152EB /* Dados.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92D9C7827F67254007152EB /* Dados.swift */; };
+		F92D9C7C27F67284007152EB /* Transacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92D9C7B27F67284007152EB /* Transacao.swift */; };
 		F977FD0F27F2636100018684 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F977FD0E27F2636100018684 /* AppDelegate.swift */; };
 		F977FD1127F2636100018684 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F977FD1027F2636100018684 /* SceneDelegate.swift */; };
 		F977FD1327F2636100018684 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F977FD1227F2636100018684 /* HomeView.swift */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F92D9C7527F66634007152EB /* CardTransacaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransacaoView.swift; sourceTree = "<group>"; };
+		F92D9C7827F67254007152EB /* Dados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dados.swift; sourceTree = "<group>"; };
+		F92D9C7B27F67284007152EB /* Transacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transacao.swift; sourceTree = "<group>"; };
 		F977FD0B27F2636100018684 /* CryptoCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F977FD0E27F2636100018684 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F977FD1027F2636100018684 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				F977FD3227F26B3900018684 /* ExtensionColor.swift */,
+				F92D9C7827F67254007152EB /* Dados.swift */,
+				F92D9C7B27F67284007152EB /* Transacao.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -122,6 +130,7 @@
 				F977FD1227F2636100018684 /* HomeView.swift */,
 				F977FD3B27F26E1A00018684 /* CardSaldoView.swift */,
 				F9BF418227F502FD002A5AEB /* TesteCarroselView.swift */,
+				F92D9C7527F66634007152EB /* CardTransacaoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,9 +212,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F977FD0F27F2636100018684 /* AppDelegate.swift in Sources */,
+				F92D9C7927F67254007152EB /* Dados.swift in Sources */,
+				F92D9C7C27F67284007152EB /* Transacao.swift in Sources */,
 				F9BF418327F502FD002A5AEB /* TesteCarroselView.swift in Sources */,
 				F977FD3C27F26E1B00018684 /* CardSaldoView.swift in Sources */,
 				F977FD1127F2636100018684 /* SceneDelegate.swift in Sources */,
+				F92D9C7627F66634007152EB /* CardTransacaoView.swift in Sources */,
 				F977FD1327F2636100018684 /* HomeView.swift in Sources */,
 				F977FD3327F26B3900018684 /* ExtensionColor.swift in Sources */,
 			);
