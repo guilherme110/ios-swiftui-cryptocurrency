@@ -26,8 +26,8 @@ struct CardSaldoView: View {
                     .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
             
                 Label("Saldo Congelado: 1.0782 ETH", systemImage: "lock.fill")
-                    .font(.custom("Quicksand-Bold", size: 11))
-                    .foregroundColor(.grey300)
+                    .font(.custom("Quicksand-Bold", size: 12))
+                    .foregroundColor(.grey500)
                     .padding(.leading, 30.0)
                     .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
                     
@@ -68,7 +68,7 @@ struct CardSaldoView: View {
                     
                     Spacer()
                 }
-                .padding(.top, 30.0)
+                .padding([.top, .bottom], 15.0)
                 .padding(.leading, 30.0)
                 .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
             }

@@ -14,6 +14,7 @@ extension Color {
     
     static let grey300 = Color("grey300")
     static let grey500 = Color("grey500")
+    static let green400 = Color("green400")
     
     // MARK: - Cores de Background
     
