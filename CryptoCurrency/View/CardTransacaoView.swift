@@ -52,8 +52,8 @@ struct CardTransacaoView: View {
                             )
                         }
                         
-                        let someUrl = URL(string: transacao.usuarios.urlImg2)
-                        if let url = someUrl {
+                        let someUrl2 = URL(string: transacao.usuarios.urlImg2)
+                        if let url = someUrl2 {
                             RemoteImageView(
                               url: url,
                               placeholder: {
@@ -70,8 +70,8 @@ struct CardTransacaoView: View {
                             )
                         }
                         
-                        let someUrl = URL(string: transacao.usuarios.urlImg3)
-                        if let url = someUrl {
+                        let someUrl3 = URL(string: transacao.usuarios.urlImg3)
+                        if let url = someUrl3 {
                             RemoteImageView(
                               url: url,
                               placeholder: {

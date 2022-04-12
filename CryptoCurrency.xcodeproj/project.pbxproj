@@ -25,6 +25,9 @@
 		F977FD3C27F26E1B00018684 /* CardSaldoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F977FD3B27F26E1A00018684 /* CardSaldoView.swift */; };
 		F9BF418327F502FD002A5AEB /* TesteCarroselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BF418227F502FD002A5AEB /* TesteCarroselView.swift */; };
 		F9BF418627F505B5002A5AEB /* MockListaTransacoes.json in Resources */ = {isa = PBXBuildFile; fileRef = F9BF418527F505B5002A5AEB /* MockListaTransacoes.json */; };
+		F9E42C1528063ECD004C559E /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C1328063ECD004C559E /* RemoteImageView.swift */; };
+		F9E42C1628063ECD004C559E /* TesteLoadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C1428063ECD004C559E /* TesteLoadImageView.swift */; };
+		F9E42C1A2806423A004C559E /* RelatoriosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C192806423A004C559E /* RelatoriosView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		F977FD3B27F26E1A00018684 /* CardSaldoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSaldoView.swift; sourceTree = "<group>"; };
 		F9BF418227F502FD002A5AEB /* TesteCarroselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteCarroselView.swift; sourceTree = "<group>"; };
 		F9BF418527F505B5002A5AEB /* MockListaTransacoes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockListaTransacoes.json; sourceTree = "<group>"; };
+		F9E42C1328063ECD004C559E /* RemoteImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		F9E42C1428063ECD004C559E /* TesteLoadImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TesteLoadImageView.swift; sourceTree = "<group>"; };
+		F9E42C192806423A004C559E /* RelatoriosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatoriosView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,8 @@
 		F977FD2F27F2666300018684 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F9E42C1328063ECD004C559E /* RemoteImageView.swift */,
+				F9E42C1428063ECD004C559E /* TesteLoadImageView.swift */,
 				F977FD3227F26B3900018684 /* ExtensionColor.swift */,
 				F92D9C7827F67254007152EB /* Dados.swift */,
 				F92D9C7B27F67284007152EB /* Transacao.swift */,
@@ -131,6 +139,7 @@
 				F977FD3B27F26E1A00018684 /* CardSaldoView.swift */,
 				F9BF418227F502FD002A5AEB /* TesteCarroselView.swift */,
 				F92D9C7527F66634007152EB /* CardTransacaoView.swift */,
+				F9E42C192806423A004C559E /* RelatoriosView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,6 +228,9 @@
 				F977FD1127F2636100018684 /* SceneDelegate.swift in Sources */,
 				F92D9C7627F66634007152EB /* CardTransacaoView.swift in Sources */,
 				F977FD1327F2636100018684 /* HomeView.swift in Sources */,
+				F9E42C1628063ECD004C559E /* TesteLoadImageView.swift in Sources */,
+				F9E42C1528063ECD004C559E /* RemoteImageView.swift in Sources */,
+				F9E42C1A2806423A004C559E /* RelatoriosView.swift in Sources */,
 				F977FD3327F26B3900018684 /* ExtensionColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
