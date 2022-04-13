@@ -28,6 +28,9 @@
 		F9E42C1528063ECD004C559E /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C1328063ECD004C559E /* RemoteImageView.swift */; };
 		F9E42C1628063ECD004C559E /* TesteLoadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C1428063ECD004C559E /* TesteLoadImageView.swift */; };
 		F9E42C1A2806423A004C559E /* RelatoriosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C192806423A004C559E /* RelatoriosView.swift */; };
+		F9E42C1D28064447004C559E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C1C28064447004C559E /* HeaderView.swift */; };
+		F9E42C232806458B004C559E /* TransacoesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C222806458B004C559E /* TransacoesView.swift */; };
+		F9E42C2728064AC8004C559E /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C2628064AC8004C559E /* ViewModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		F9E42C1328063ECD004C559E /* RemoteImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		F9E42C1428063ECD004C559E /* TesteLoadImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TesteLoadImageView.swift; sourceTree = "<group>"; };
 		F9E42C192806423A004C559E /* RelatoriosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatoriosView.swift; sourceTree = "<group>"; };
+		F9E42C1C28064447004C559E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		F9E42C222806458B004C559E /* TransacoesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransacoesView.swift; sourceTree = "<group>"; };
+		F9E42C2628064AC8004C559E /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,7 @@
 				F977FD3227F26B3900018684 /* ExtensionColor.swift */,
 				F92D9C7827F67254007152EB /* Dados.swift */,
 				F92D9C7B27F67284007152EB /* Transacao.swift */,
+				F9E42C2628064AC8004C559E /* ViewModifiers.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,13 +142,39 @@
 		F977FD3027F2666A00018684 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F977FD1227F2636100018684 /* HomeView.swift */,
-				F977FD3B27F26E1A00018684 /* CardSaldoView.swift */,
-				F9BF418227F502FD002A5AEB /* TesteCarroselView.swift */,
-				F92D9C7527F66634007152EB /* CardTransacaoView.swift */,
-				F9E42C192806423A004C559E /* RelatoriosView.swift */,
+				F9E42C2128064567004C559E /* Transacoes */,
+				F9E42C2028064560004C559E /* Core */,
+				F9E42C1F28064556004C559E /* Tela Inicial */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F9E42C1F28064556004C559E /* Tela Inicial */ = {
+			isa = PBXGroup;
+			children = (
+				F977FD1227F2636100018684 /* HomeView.swift */,
+				F977FD3B27F26E1A00018684 /* CardSaldoView.swift */,
+				F92D9C7527F66634007152EB /* CardTransacaoView.swift */,
+				F9E42C192806423A004C559E /* RelatoriosView.swift */,
+				F9E42C1C28064447004C559E /* HeaderView.swift */,
+			);
+			path = "Tela Inicial";
+			sourceTree = "<group>";
+		};
+		F9E42C2028064560004C559E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F9BF418227F502FD002A5AEB /* TesteCarroselView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F9E42C2128064567004C559E /* Transacoes */ = {
+			isa = PBXGroup;
+			children = (
+				F9E42C222806458B004C559E /* TransacoesView.swift */,
+			);
+			path = Transacoes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9E42C2728064AC8004C559E /* ViewModifiers.swift in Sources */,
 				F977FD0F27F2636100018684 /* AppDelegate.swift in Sources */,
 				F92D9C7927F67254007152EB /* Dados.swift in Sources */,
 				F92D9C7C27F67284007152EB /* Transacao.swift in Sources */,
@@ -232,6 +266,8 @@
 				F9E42C1528063ECD004C559E /* RemoteImageView.swift in Sources */,
 				F9E42C1A2806423A004C559E /* RelatoriosView.swift in Sources */,
 				F977FD3327F26B3900018684 /* ExtensionColor.swift in Sources */,
+				F9E42C1D28064447004C559E /* HeaderView.swift in Sources */,
+				F9E42C232806458B004C559E /* TransacoesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
