@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F9158A1A2807820F00F6D6E7 /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = F9158A192807820F00F6D6E7 /* WrappingHStack */; };
+		F9158A1D2807868A00F6D6E7 /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9158A1C2807868A00F6D6E7 /* ExtensionView.swift */; };
 		F92D9C7627F66634007152EB /* CardTransacaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92D9C7527F66634007152EB /* CardTransacaoView.swift */; };
 		F92D9C7927F67254007152EB /* Dados.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92D9C7827F67254007152EB /* Dados.swift */; };
 		F92D9C7C27F67284007152EB /* Transacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92D9C7B27F67284007152EB /* Transacao.swift */; };
@@ -34,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F9158A1C2807868A00F6D6E7 /* ExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
 		F92D9C7527F66634007152EB /* CardTransacaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransacaoView.swift; sourceTree = "<group>"; };
 		F92D9C7827F67254007152EB /* Dados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dados.swift; sourceTree = "<group>"; };
 		F92D9C7B27F67284007152EB /* Transacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transacao.swift; sourceTree = "<group>"; };
@@ -67,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9158A1A2807820F00F6D6E7 /* WrappingHStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +139,7 @@
 				F92D9C7827F67254007152EB /* Dados.swift */,
 				F92D9C7B27F67284007152EB /* Transacao.swift */,
 				F9E42C2628064AC8004C559E /* ViewModifiers.swift */,
+				F9158A1C2807868A00F6D6E7 /* ExtensionView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,6 +198,9 @@
 			dependencies = (
 			);
 			name = CryptoCurrency;
+			packageProductDependencies = (
+				F9158A192807820F00F6D6E7 /* WrappingHStack */,
+			);
 			productName = CryptoCurrency;
 			productReference = F977FD0B27F2636100018684 /* CryptoCurrency.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +228,9 @@
 				Base,
 			);
 			mainGroup = F977FD0227F2636000018684;
+			packageReferences = (
+				F9158A182807820F00F6D6E7 /* XCRemoteSwiftPackageReference "WrappingHStack" */,
+			);
 			productRefGroup = F977FD0C27F2636100018684 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,6 +270,7 @@
 				F92D9C7C27F67284007152EB /* Transacao.swift in Sources */,
 				F9BF418327F502FD002A5AEB /* TesteCarroselView.swift in Sources */,
 				F977FD3C27F26E1B00018684 /* CardSaldoView.swift in Sources */,
+				F9158A1D2807868A00F6D6E7 /* ExtensionView.swift in Sources */,
 				F977FD1127F2636100018684 /* SceneDelegate.swift in Sources */,
 				F92D9C7627F66634007152EB /* CardTransacaoView.swift in Sources */,
 				F977FD1327F2636100018684 /* HomeView.swift in Sources */,
@@ -463,6 +475,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F9158A182807820F00F6D6E7 /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dkk/WrappingHStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F9158A192807820F00F6D6E7 /* WrappingHStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9158A182807820F00F6D6E7 /* XCRemoteSwiftPackageReference "WrappingHStack" */;
+			productName = WrappingHStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F977FD0327F2636000018684 /* Project object */;
 }
