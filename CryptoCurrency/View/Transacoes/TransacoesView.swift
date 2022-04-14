@@ -172,7 +172,28 @@ struct TransacoesView: View {
                         .padding(.top, 15.0)
                     
                     Divider()
-                
+                    
+                    ForEach(transacoesRealizadas, id: \.self) { transacao in
+                        VStack {
+                            HStack {
+                                Text(transacao.origem)
+                                    .font(.custom("Quicksand-Bold", size: 18))
+                                    .foregroundColor(.darkBlue)
+                                    .fontWeight(.bold)
+                                    .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                                    .padding(.top, 15.0)
+                                RoundedRectangle(cornerRadius: 15.0)
+                                    .fill(Color.grey200)
+                                    .overlay(
+                                        Text(StatusTransacoes(rawValue: transacao.status)?.nomeStatus ?? "")
+                                    )
+                                
+                            }
+                            
+                        }
+                        
+                    }
+            
                 }
             }
         }

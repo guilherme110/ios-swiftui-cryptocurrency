@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		F9158A1A2807820F00F6D6E7 /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = F9158A192807820F00F6D6E7 /* WrappingHStack */; };
 		F9158A1D2807868A00F6D6E7 /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9158A1C2807868A00F6D6E7 /* ExtensionView.swift */; };
+		F9158A2028078DAF00F6D6E7 /* MockListaTransacoesRealizadas.json in Resources */ = {isa = PBXBuildFile; fileRef = F9158A1F28078DAF00F6D6E7 /* MockListaTransacoesRealizadas.json */; };
+		F9158A2328078E4700F6D6E7 /* StatusTransacoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9158A2228078E4700F6D6E7 /* StatusTransacoes.swift */; };
+		F9158A272807917F00F6D6E7 /* TransacaoRealizada.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9158A262807917F00F6D6E7 /* TransacaoRealizada.swift */; };
 		F92D9C7627F66634007152EB /* CardTransacaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92D9C7527F66634007152EB /* CardTransacaoView.swift */; };
 		F92D9C7927F67254007152EB /* Dados.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92D9C7827F67254007152EB /* Dados.swift */; };
 		F92D9C7C27F67284007152EB /* Transacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92D9C7B27F67284007152EB /* Transacao.swift */; };
@@ -37,6 +40,9 @@
 
 /* Begin PBXFileReference section */
 		F9158A1C2807868A00F6D6E7 /* ExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
+		F9158A1F28078DAF00F6D6E7 /* MockListaTransacoesRealizadas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockListaTransacoesRealizadas.json; sourceTree = "<group>"; };
+		F9158A2228078E4700F6D6E7 /* StatusTransacoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTransacoes.swift; sourceTree = "<group>"; };
+		F9158A262807917F00F6D6E7 /* TransacaoRealizada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransacaoRealizada.swift; sourceTree = "<group>"; };
 		F92D9C7527F66634007152EB /* CardTransacaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransacaoView.swift; sourceTree = "<group>"; };
 		F92D9C7827F67254007152EB /* Dados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dados.swift; sourceTree = "<group>"; };
 		F92D9C7B27F67284007152EB /* Transacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transacao.swift; sourceTree = "<group>"; };
@@ -106,6 +112,7 @@
 				F977FD1C27F2636400018684 /* Info.plist */,
 				F977FD1627F2636400018684 /* Preview Content */,
 				F9BF418527F505B5002A5AEB /* MockListaTransacoes.json */,
+				F9158A1F28078DAF00F6D6E7 /* MockListaTransacoesRealizadas.json */,
 			);
 			path = CryptoCurrency;
 			sourceTree = "<group>";
@@ -138,8 +145,10 @@
 				F977FD3227F26B3900018684 /* ExtensionColor.swift */,
 				F92D9C7827F67254007152EB /* Dados.swift */,
 				F92D9C7B27F67284007152EB /* Transacao.swift */,
+				F9158A262807917F00F6D6E7 /* TransacaoRealizada.swift */,
 				F9E42C2628064AC8004C559E /* ViewModifiers.swift */,
 				F9158A1C2807868A00F6D6E7 /* ExtensionView.swift */,
+				F9158A2228078E4700F6D6E7 /* StatusTransacoes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -249,6 +258,7 @@
 				F977FD1B27F2636400018684 /* LaunchScreen.storyboard in Resources */,
 				F977FD2D27F2654600018684 /* Quicksand-SemiBold.ttf in Resources */,
 				F977FD1827F2636400018684 /* Preview Assets.xcassets in Resources */,
+				F9158A2028078DAF00F6D6E7 /* MockListaTransacoesRealizadas.json in Resources */,
 				F977FD1527F2636400018684 /* Assets.xcassets in Resources */,
 				F977FD2C27F2654600018684 /* Quicksand-Light.ttf in Resources */,
 				F977FD2927F2654600018684 /* Quicksand-Regular.ttf in Resources */,
@@ -276,8 +286,10 @@
 				F977FD1327F2636100018684 /* HomeView.swift in Sources */,
 				F9E42C1628063ECD004C559E /* TesteLoadImageView.swift in Sources */,
 				F9E42C1528063ECD004C559E /* RemoteImageView.swift in Sources */,
+				F9158A272807917F00F6D6E7 /* TransacaoRealizada.swift in Sources */,
 				F9E42C1A2806423A004C559E /* RelatoriosView.swift in Sources */,
 				F977FD3327F26B3900018684 /* ExtensionColor.swift in Sources */,
+				F9158A2328078E4700F6D6E7 /* StatusTransacoes.swift in Sources */,
 				F9E42C1D28064447004C559E /* HeaderView.swift in Sources */,
 				F9E42C232806458B004C559E /* TransacoesView.swift in Sources */,
 			);
