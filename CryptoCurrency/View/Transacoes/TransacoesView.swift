@@ -169,31 +169,17 @@ struct TransacoesView: View {
                         .foregroundColor(.darkBlue)
                         .fontWeight(.bold)
                         .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                        .padding(.top, 15.0)
-                    
-                    Divider()
+                        .padding(.top, 30.0)
+                        .padding(.bottom, 20.0)
                     
                     ForEach(transacoesRealizadas, id: \.self) { transacao in
-                        VStack {
-                            HStack {
-                                Text(transacao.origem)
-                                    .font(.custom("Quicksand-Bold", size: 18))
-                                    .foregroundColor(.darkBlue)
-                                    .fontWeight(.bold)
-                                    .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                                    .padding(.top, 15.0)
-                                RoundedRectangle(cornerRadius: 15.0)
-                                    .fill(Color.grey200)
-                                    .overlay(
-                                        Text(StatusTransacoes(rawValue: transacao.status)?.nomeStatus ?? "")
-                                    )
-                                
-                            }
-                            
-                        }
                         
+                        Divider()
+                        
+                        DetalheTransacaoView(transacao: transacao)
+                            .frame(width: view.size.width, height: 250, alignment: .top)
                     }
-            
+                    .padding(.bottom, 10.0)
                 }
             }
         }
@@ -206,5 +192,6 @@ struct TransacoesView: View {
 struct TransacoesView_Previews: PreviewProvider {
     static var previews: some View {
         TransacoesView()
+            .previewLayout(.fixed(width: 400, height: 1400))
     }
 }

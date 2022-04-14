@@ -13,6 +13,7 @@ extension Color {
     // MARK: - Cores de Fontes
     
     static let grey300 = Color("grey300")
+    static let grey400 = Color("grey400")
     static let grey500 = Color("grey500")
     static let green400 = Color("green400")
     static let orange200 = Color("orange200")
