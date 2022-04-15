@@ -13,7 +13,6 @@ struct DetalheTransacaoView: View {
     
     var body: some View {
         GeometryReader { view in
-            
             VStack {
                 HStack {
                     Text(transacao.origem)

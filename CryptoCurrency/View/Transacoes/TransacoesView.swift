@@ -16,8 +16,19 @@ fileprivate func criaMenuOpcoes() -> [Opcao] {
     return [opcao1, opcao2]
 }
 
+fileprivate func carregaDadosCards() -> [CardRetangulo] {
+    let cardRetangulo1 = CardRetangulo(titulo: "73", subTitulo: "Esperando pela Confirmação", corFundo: Color.lightBlue, corFonte: Color.white)
+    let cardRetangulo2 = CardRetangulo(titulo: "48", subTitulo: "Emparelhando", corFundo: Color.darkBlue, corFonte: Color.white)
+    let cardRetangulo3 = CardRetangulo(titulo: "9", subTitulo: "Em Progresso", corFundo: Color.lightGreen, corFonte: Color.white)
+    let cardRetangulo4 = CardRetangulo(titulo: "230", subTitulo: "Completas", corFundo: Color.white, corFonte: Color.black, addBorda: true)
+    let cardRetangulo5 = CardRetangulo(titulo: "0", subTitulo: "Objeção ou Falha", corFundo: Color.lightPink, corFonte: Color.orange200)
+    
+    return [cardRetangulo1, cardRetangulo2, cardRetangulo3, cardRetangulo4, cardRetangulo5]
+}
+
 struct TransacoesView: View {
     var menuOpcoes = criaMenuOpcoes()
+    var listaCardsRetangulo = carregaDadosCards()
     
     var body: some View {
         GeometryReader { view in
@@ -33,108 +44,11 @@ struct TransacoesView: View {
                         .frame(width: view.size.width, alignment: .leading)
                         .padding(.top, 45.0)
                     
-                    WrappingHStack {
-                        RoundedRectangle(cornerRadius: 15.0)
-                            .fill(Color.lightBlue)
-                            .overlay(
-                                VStack {
-                                    Text("73")
-                                        .font(.custom("Quicksand-Bold", size: 25))
-                                        .foregroundColor(.white)
-                                        .fontWeight(.bold)
-                                        .frame(width: 80, alignment: .leading)
-                                    Text("Esperando pela Confirmação")
-                                        .font(.custom("Quicksand-Medium", size: 10))
-                                        .foregroundColor(.white)
-                                        .fontWeight(.bold)
-                                        .frame(width: 80, alignment: .leading)
-                                }
-                                .padding([.leading, .trailing], 15.0)
-                            )
-                            .frame(width: 100, height: 120, alignment: .leading)
-                            .padding(.top, 15.0)
-                        
-                        RoundedRectangle(cornerRadius: 15.0)
-                            .fill(Color.darkBlue)
-                            .overlay(
-                                VStack {
-                                    Text("48")
-                                        .font(.custom("Quicksand-Bold", size: 25))
-                                        .foregroundColor(.white)
-                                        .fontWeight(.bold)
-                                        .frame(width: 80, alignment: .leading)
-                                    Text("Emparelhando")
-                                        .font(.custom("Quicksand-Medium", size: 10))
-                                        .foregroundColor(.white)
-                                        .fontWeight(.bold)
-                                        .frame(width: 80, alignment: .leading)
-                                }
-                                .padding([.leading, .trailing], 15.0)
-                            )
-                            .frame(width: 100, height: 120, alignment: .leading)
-                            .padding(.top, 15.0)
-                        
-                        RoundedRectangle(cornerRadius: 15.0)
-                            .fill(Color.lightGreen)
-                            .overlay(
-                                VStack {
-                                    Text("9")
-                                        .font(.custom("Quicksand-Bold", size: 25))
-                                        .foregroundColor(.white)
-                                        .fontWeight(.bold)
-                                        .frame(width: 80, alignment: .leading)
-                                    Text("Em Progresso")
-                                        .font(.custom("Quicksand-Medium", size: 10))
-                                        .foregroundColor(.white)
-                                        .fontWeight(.bold)
-                                        .frame(width: 80, alignment: .leading)
-                                }
-                                .padding([.leading, .trailing], 15.0)
-                            )
-                            .frame(width: 100, height: 120, alignment: .leading)
-                            .padding(.top, 15.0)
-                        
-                        RoundedRectangle(cornerRadius: 15.0)
-                            .fill(Color.white)
-                            .overlay(
-                                VStack {
-                                    Text("230")
-                                        .font(.custom("Quicksand-Bold", size: 25))
-                                        .foregroundColor(.black)
-                                        .fontWeight(.bold)
-                                        .frame(width: 80, alignment: .leading)
-                                    Text("Completas")
-                                        .font(.custom("Quicksand-Medium", size: 10))
-                                        .foregroundColor(.black)
-                                        .frame(width: 80, alignment: .leading)
-                                }
-                                .padding([.leading, .trailing], 15.0)
-                            )
-                            .frame(width: 100, height: 120, alignment: .leading)
-                            .addBorder(Color.black, cornerRadius: 10)
-                            .padding(.top, 15.0)
-                        
-                        RoundedRectangle(cornerRadius: 15.0)
-                            .fill(Color.lightPink)
-                            .overlay(
-                                VStack {
-                                    Text("0")
-                                        .font(.custom("Quicksand-Bold", size: 25))
-                                        .foregroundColor(.orange200)
-                                        .fontWeight(.bold)
-                                        .frame(width: 80, alignment: .leading)
-                                    Text("Objeção ou Falha")
-                                        .font(.custom("Quicksand-Medium", size: 10))
-                                        .foregroundColor(.orange200)
-                                        .fontWeight(.bold)
-                                        .frame(width: 80, alignment: .leading)
-                                }
-                                .padding([.leading, .trailing], 15.0)
-                            )
-                            .frame(width: 100, height: 120, alignment: .leading)
+                    WrappingHStack(listaCardsRetangulo, id: \.self) { cardRetangulo in
+                        CardRetanguloView(cardRetangulo: cardRetangulo)
                             .padding(.top, 15.0)
                     }
-                    
+                
                     Text("Novas Transações")
                         .font(.custom("Quicksand-Bold", size: 20))
                         .foregroundColor(.darkBlue)
@@ -144,7 +58,6 @@ struct TransacoesView: View {
                         .padding(.bottom, 20.0)
                     
                     ForEach(transacoesRealizadas, id: \.self) { transacao in
-                        
                         Divider()
                         
                         DetalheTransacaoView(transacao: transacao)

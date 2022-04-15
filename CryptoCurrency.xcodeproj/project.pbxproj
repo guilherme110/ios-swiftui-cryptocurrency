@@ -32,6 +32,8 @@
 		F9961A6A28086E3400FA3375 /* DetalheTransacaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9961A6928086E3400FA3375 /* DetalheTransacaoView.swift */; };
 		F9BF418327F502FD002A5AEB /* TesteCarroselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BF418227F502FD002A5AEB /* TesteCarroselView.swift */; };
 		F9BF418627F505B5002A5AEB /* MockListaTransacoes.json in Resources */ = {isa = PBXBuildFile; fileRef = F9BF418527F505B5002A5AEB /* MockListaTransacoes.json */; };
+		F9CE7D38280A25D7008317DB /* CardRetanguloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE7D37280A25D7008317DB /* CardRetanguloView.swift */; };
+		F9CE7D3B280A269D008317DB /* CardRetangulo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE7D3A280A269D008317DB /* CardRetangulo.swift */; };
 		F9DA6A9F2808EB8800AD4BCD /* Opcao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DA6A9E2808EB8800AD4BCD /* Opcao.swift */; };
 		F9E42C1528063ECD004C559E /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C1328063ECD004C559E /* RemoteImageView.swift */; };
 		F9E42C1628063ECD004C559E /* TesteLoadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C1428063ECD004C559E /* TesteLoadImageView.swift */; };
@@ -68,6 +70,8 @@
 		F9961A6928086E3400FA3375 /* DetalheTransacaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheTransacaoView.swift; sourceTree = "<group>"; };
 		F9BF418227F502FD002A5AEB /* TesteCarroselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteCarroselView.swift; sourceTree = "<group>"; };
 		F9BF418527F505B5002A5AEB /* MockListaTransacoes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockListaTransacoes.json; sourceTree = "<group>"; };
+		F9CE7D37280A25D7008317DB /* CardRetanguloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRetanguloView.swift; sourceTree = "<group>"; };
+		F9CE7D3A280A269D008317DB /* CardRetangulo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRetangulo.swift; sourceTree = "<group>"; };
 		F9DA6A9E2808EB8800AD4BCD /* Opcao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opcao.swift; sourceTree = "<group>"; };
 		F9E42C1328063ECD004C559E /* RemoteImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		F9E42C1428063ECD004C559E /* TesteLoadImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TesteLoadImageView.swift; sourceTree = "<group>"; };
@@ -116,9 +120,8 @@
 				F977FD1427F2636400018684 /* Assets.xcassets */,
 				F977FD1927F2636400018684 /* LaunchScreen.storyboard */,
 				F977FD1C27F2636400018684 /* Info.plist */,
+				F9CE7D41280A32B9008317DB /* Mocks */,
 				F977FD1627F2636400018684 /* Preview Content */,
-				F9BF418527F505B5002A5AEB /* MockListaTransacoes.json */,
-				F9158A1F28078DAF00F6D6E7 /* MockListaTransacoesRealizadas.json */,
 			);
 			path = CryptoCurrency;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				F9158A1C2807868A00F6D6E7 /* ExtensionView.swift */,
 				F9158A2228078E4700F6D6E7 /* StatusTransacoes.swift */,
 				F9DA6A9E2808EB8800AD4BCD /* Opcao.swift */,
+				F9CE7D3A280A269D008317DB /* CardRetangulo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +172,15 @@
 				F9E42C1F28064556004C559E /* Tela Inicial */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F9CE7D41280A32B9008317DB /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F9BF418527F505B5002A5AEB /* MockListaTransacoes.json */,
+				F9158A1F28078DAF00F6D6E7 /* MockListaTransacoesRealizadas.json */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		F9E42C1F28064556004C559E /* Tela Inicial */ = {
@@ -187,6 +200,7 @@
 			children = (
 				F9829AAA2808D1680084965B /* MenuOpcoesView.swift */,
 				F9BF418227F502FD002A5AEB /* TesteCarroselView.swift */,
+				F9CE7D37280A25D7008317DB /* CardRetanguloView.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -295,9 +309,11 @@
 				F92D9C7627F66634007152EB /* CardTransacaoView.swift in Sources */,
 				F977FD1327F2636100018684 /* HomeView.swift in Sources */,
 				F9E42C1628063ECD004C559E /* TesteLoadImageView.swift in Sources */,
+				F9CE7D38280A25D7008317DB /* CardRetanguloView.swift in Sources */,
 				F9E42C1528063ECD004C559E /* RemoteImageView.swift in Sources */,
 				F9158A272807917F00F6D6E7 /* TransacaoRealizada.swift in Sources */,
 				F9E42C1A2806423A004C559E /* RelatoriosView.swift in Sources */,
+				F9CE7D3B280A269D008317DB /* CardRetangulo.swift in Sources */,
 				F977FD3327F26B3900018684 /* ExtensionColor.swift in Sources */,
 				F9158A2328078E4700F6D6E7 /* StatusTransacoes.swift in Sources */,
 				F9829AAB2808D1680084965B /* MenuOpcoesView.swift in Sources */,
