@@ -8,8 +8,16 @@
 import SwiftUI
 import WrappingHStack
 
+
+fileprivate func criaMenuOpcoes() -> [Opcao] {
+    let opcao1 = Opcao(selecionada: true, texto: "Lançadas")
+    let opcao2 = Opcao(selecionada: false, texto: "Recebidas")
+    
+    return [opcao1, opcao2]
+}
+
 struct TransacoesView: View {
-    @State private var menuOpcoes: [Bool] = [true, false]
+    var menuOpcoes = criaMenuOpcoes()
     
     var body: some View {
         GeometryReader { view in
@@ -21,46 +29,9 @@ struct TransacoesView: View {
                         .fontWeight(.bold)
                         .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
                 
-                    HStack {
-                        Button(action: {
-                            self.menuOpcoes[0] = true
-                            self.menuOpcoes[1] = false
-                        }) {
-                            VStack {
-                                Text("Lançadas")
-                                    .font(.custom("Quicksand-Bold", size: 18))
-                                    .foregroundColor(menuOpcoes[0] ? .darkBlue : .grey500)
-                                    .fontWeight(.bold)
-                                Circle()
-                                    .frame(width: 10, height: 10)
-                                    .foregroundColor(.lightBlue)
-                                    .opacity(menuOpcoes[0] ? 1 : 0)
-                            }
-                            .frame(minWidth: 0, alignment: .center)
-                            
-                        }
-                        
-                        Button(action: {
-                            self.menuOpcoes[0] = false
-                            self.menuOpcoes[1] = true
-                        }) {
-                            VStack {
-                                Text("Recebidas")
-                                    .font(.custom("Quicksand-Bold", size: 18))
-                                    .foregroundColor(menuOpcoes[1] ? .darkBlue : .grey500)
-                                    .fontWeight(.bold)
-                                
-                                Circle()
-                                    .frame(width: 10, height: 10)
-                                    .foregroundColor(.lightBlue)
-                                    .opacity(menuOpcoes[1] ? 1 : 0)
-                            }
-                            .frame(minWidth: 0, alignment: .center)
-                            .padding(.leading, 40.0)
-                        }
-                    }
-                    .frame(width: view.size.width, alignment: .leading)
-                    .padding(.top, 45.0)
+                    MenuOpcoesView(menuOpcoes: menuOpcoes)
+                        .frame(width: view.size.width, alignment: .leading)
+                        .padding(.top, 45.0)
                     
                     WrappingHStack {
                         RoundedRectangle(cornerRadius: 15.0)
