@@ -8,37 +8,23 @@
 import SwiftUI
 
 struct RelatoriosView: View {
+    
+    @State var relatorio: Relatorio
+    
     var body: some View {
         GeometryReader { view in
             VStack {
-                HStack {
-                    Text("Transações de Leilão")
-                        .font(.custom("Quicksand-Bold", size: 16))
-                        .foregroundColor(.darkBlue)
-                        .fontWeight(.bold)
-                      
-                    Spacer()
-                    
-                    Label("Últimos 3 dias", systemImage: "clock.fill")
-                        .font(.custom("Quicksand-Bold", size: 12))
-                        .foregroundColor(.grey500)
-                        .padding(.trailing, 15.0)
-                    
-                }
-                .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                .padding([.leading, .top], 15.0)
-                
                 Divider()
     
                 HStack {
-                    Text("Relatório de Análises da Blockchain")
+                    Text(relatorio.titulo)
                         .font(.custom("Quicksand-Bold", size: 16))
                         .foregroundColor(.darkBlue)
                         .fontWeight(.bold)
     
                     Spacer()
     
-                    Text("16.00 ETH")
+                    Text(relatorio.precoAlvo)
                         .font(.custom("Quicksand-Bold", size: 16))
                         .foregroundColor(.green400)
                         .fontWeight(.bold)
@@ -50,9 +36,9 @@ struct RelatoriosView: View {
                 
                 HStack {
                     VStack {
-                        Text("Criado: 16.10.2019")
+                        Text("Criado: \(relatorio.dataPublicacao)")
                             .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                        Text("Autor: Jason Howard")
+                        Text("Autor: \(relatorio.autor)")
                             .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
                     }
                     .font(.custom("Quicksand-Bold", size: 12))
@@ -78,12 +64,15 @@ struct RelatoriosView: View {
                 .padding(.top, 5.0)
             }
         }
+        .frame(width: .infinity, height: 120, alignment: .leading)
     }
 }
 
 struct RelatoriosView_Previews: PreviewProvider {
     static var previews: some View {
-        RelatoriosView()
-            .previewLayout(.fixed(width: 400, height: 200))
+        let relatorioTeste = Relatorio(id: 1, titulo: "Teste", precoAlvo: "999 BTC", dataPublicacao: "10.10.1990", autor: "Teste 123")
+        
+        RelatoriosView(relatorio: relatorioTeste)
+            .previewLayout(.fixed(width: 400, height: 120))
     }
 }

@@ -34,6 +34,8 @@
 		F9BF418627F505B5002A5AEB /* MockListaTransacoes.json in Resources */ = {isa = PBXBuildFile; fileRef = F9BF418527F505B5002A5AEB /* MockListaTransacoes.json */; };
 		F9CE7D38280A25D7008317DB /* CardRetanguloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE7D37280A25D7008317DB /* CardRetanguloView.swift */; };
 		F9CE7D3B280A269D008317DB /* CardRetangulo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE7D3A280A269D008317DB /* CardRetangulo.swift */; };
+		F9CE7D45280A36A7008317DB /* MockRelatorios.json in Resources */ = {isa = PBXBuildFile; fileRef = F9CE7D44280A36A7008317DB /* MockRelatorios.json */; };
+		F9CE7D48280A3D8C008317DB /* Relatorio.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE7D47280A3D8C008317DB /* Relatorio.swift */; };
 		F9DA6A9F2808EB8800AD4BCD /* Opcao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DA6A9E2808EB8800AD4BCD /* Opcao.swift */; };
 		F9E42C1528063ECD004C559E /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C1328063ECD004C559E /* RemoteImageView.swift */; };
 		F9E42C1628063ECD004C559E /* TesteLoadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C1428063ECD004C559E /* TesteLoadImageView.swift */; };
@@ -72,6 +74,8 @@
 		F9BF418527F505B5002A5AEB /* MockListaTransacoes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockListaTransacoes.json; sourceTree = "<group>"; };
 		F9CE7D37280A25D7008317DB /* CardRetanguloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRetanguloView.swift; sourceTree = "<group>"; };
 		F9CE7D3A280A269D008317DB /* CardRetangulo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRetangulo.swift; sourceTree = "<group>"; };
+		F9CE7D44280A36A7008317DB /* MockRelatorios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockRelatorios.json; sourceTree = "<group>"; };
+		F9CE7D47280A3D8C008317DB /* Relatorio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relatorio.swift; sourceTree = "<group>"; };
 		F9DA6A9E2808EB8800AD4BCD /* Opcao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opcao.swift; sourceTree = "<group>"; };
 		F9E42C1328063ECD004C559E /* RemoteImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		F9E42C1428063ECD004C559E /* TesteLoadImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TesteLoadImageView.swift; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 				F9158A2228078E4700F6D6E7 /* StatusTransacoes.swift */,
 				F9DA6A9E2808EB8800AD4BCD /* Opcao.swift */,
 				F9CE7D3A280A269D008317DB /* CardRetangulo.swift */,
+				F9CE7D47280A3D8C008317DB /* Relatorio.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 			children = (
 				F9BF418527F505B5002A5AEB /* MockListaTransacoes.json */,
 				F9158A1F28078DAF00F6D6E7 /* MockListaTransacoesRealizadas.json */,
+				F9CE7D44280A36A7008317DB /* MockRelatorios.json */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -278,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9BF418627F505B5002A5AEB /* MockListaTransacoes.json in Resources */,
+				F9CE7D45280A36A7008317DB /* MockRelatorios.json in Resources */,
 				F977FD1B27F2636400018684 /* LaunchScreen.storyboard in Resources */,
 				F977FD2D27F2654600018684 /* Quicksand-SemiBold.ttf in Resources */,
 				F977FD1827F2636400018684 /* Preview Assets.xcassets in Resources */,
@@ -308,6 +315,7 @@
 				F977FD1127F2636100018684 /* SceneDelegate.swift in Sources */,
 				F92D9C7627F66634007152EB /* CardTransacaoView.swift in Sources */,
 				F977FD1327F2636100018684 /* HomeView.swift in Sources */,
+				F9CE7D48280A3D8C008317DB /* Relatorio.swift in Sources */,
 				F9E42C1628063ECD004C559E /* TesteLoadImageView.swift in Sources */,
 				F9CE7D38280A25D7008317DB /* CardRetanguloView.swift in Sources */,
 				F9E42C1528063ECD004C559E /* RemoteImageView.swift in Sources */,
