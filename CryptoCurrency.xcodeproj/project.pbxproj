@@ -32,9 +32,10 @@
 		F9961A6A28086E3400FA3375 /* DetalheTransacaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9961A6928086E3400FA3375 /* DetalheTransacaoView.swift */; };
 		F9BF418327F502FD002A5AEB /* TesteCarroselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BF418227F502FD002A5AEB /* TesteCarroselView.swift */; };
 		F9BF418627F505B5002A5AEB /* MockListaTransacoes.json in Resources */ = {isa = PBXBuildFile; fileRef = F9BF418527F505B5002A5AEB /* MockListaTransacoes.json */; };
+		F9C80136280AF99100CB209F /* CardTransacaoView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C80135280AF99100CB209F /* CardTransacaoView-ViewModel.swift */; };
+		F9C8013C280B098600CB209F /* RelatoriosView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C8013B280B098600CB209F /* RelatoriosView-ViewModel.swift */; };
 		F9CE7D38280A25D7008317DB /* CardRetanguloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE7D37280A25D7008317DB /* CardRetanguloView.swift */; };
 		F9CE7D3B280A269D008317DB /* CardRetangulo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE7D3A280A269D008317DB /* CardRetangulo.swift */; };
-		F9CE7D45280A36A7008317DB /* MockRelatorios.json in Resources */ = {isa = PBXBuildFile; fileRef = F9CE7D44280A36A7008317DB /* MockRelatorios.json */; };
 		F9CE7D48280A3D8C008317DB /* Relatorio.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE7D47280A3D8C008317DB /* Relatorio.swift */; };
 		F9DA6A9F2808EB8800AD4BCD /* Opcao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DA6A9E2808EB8800AD4BCD /* Opcao.swift */; };
 		F9E42C1528063ECD004C559E /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C1328063ECD004C559E /* RemoteImageView.swift */; };
@@ -42,7 +43,6 @@
 		F9E42C1A2806423A004C559E /* RelatoriosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C192806423A004C559E /* RelatoriosView.swift */; };
 		F9E42C1D28064447004C559E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C1C28064447004C559E /* HeaderView.swift */; };
 		F9E42C232806458B004C559E /* TransacoesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C222806458B004C559E /* TransacoesView.swift */; };
-		F9E42C2728064AC8004C559E /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C2628064AC8004C559E /* ViewModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,9 +72,10 @@
 		F9961A6928086E3400FA3375 /* DetalheTransacaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheTransacaoView.swift; sourceTree = "<group>"; };
 		F9BF418227F502FD002A5AEB /* TesteCarroselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteCarroselView.swift; sourceTree = "<group>"; };
 		F9BF418527F505B5002A5AEB /* MockListaTransacoes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockListaTransacoes.json; sourceTree = "<group>"; };
+		F9C80135280AF99100CB209F /* CardTransacaoView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardTransacaoView-ViewModel.swift"; sourceTree = "<group>"; };
+		F9C8013B280B098600CB209F /* RelatoriosView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RelatoriosView-ViewModel.swift"; sourceTree = "<group>"; };
 		F9CE7D37280A25D7008317DB /* CardRetanguloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRetanguloView.swift; sourceTree = "<group>"; };
 		F9CE7D3A280A269D008317DB /* CardRetangulo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRetangulo.swift; sourceTree = "<group>"; };
-		F9CE7D44280A36A7008317DB /* MockRelatorios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockRelatorios.json; sourceTree = "<group>"; };
 		F9CE7D47280A3D8C008317DB /* Relatorio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relatorio.swift; sourceTree = "<group>"; };
 		F9DA6A9E2808EB8800AD4BCD /* Opcao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opcao.swift; sourceTree = "<group>"; };
 		F9E42C1328063ECD004C559E /* RemoteImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
@@ -82,7 +83,6 @@
 		F9E42C192806423A004C559E /* RelatoriosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatoriosView.swift; sourceTree = "<group>"; };
 		F9E42C1C28064447004C559E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		F9E42C222806458B004C559E /* TransacoesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransacoesView.swift; sourceTree = "<group>"; };
-		F9E42C2628064AC8004C559E /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +116,10 @@
 		F977FD0D27F2636100018684 /* CryptoCurrency */ = {
 			isa = PBXGroup;
 			children = (
-				F977FD3027F2666A00018684 /* View */,
 				F977FD2F27F2666300018684 /* Model */,
+				F977FD3027F2666A00018684 /* View */,
 				F977FD2327F2652E00018684 /* Fontes */,
+				F9C80139280AFBF000CB209F /* Extension */,
 				F977FD0E27F2636100018684 /* AppDelegate.swift */,
 				F977FD1027F2636100018684 /* SceneDelegate.swift */,
 				F977FD1427F2636400018684 /* Assets.xcassets */,
@@ -153,14 +154,9 @@
 		F977FD2F27F2666300018684 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F9E42C1328063ECD004C559E /* RemoteImageView.swift */,
-				F9E42C1428063ECD004C559E /* TesteLoadImageView.swift */,
-				F977FD3227F26B3900018684 /* ExtensionColor.swift */,
 				F92D9C7827F67254007152EB /* Dados.swift */,
 				F92D9C7B27F67284007152EB /* Transacao.swift */,
 				F9158A262807917F00F6D6E7 /* TransacaoRealizada.swift */,
-				F9E42C2628064AC8004C559E /* ViewModifiers.swift */,
-				F9158A1C2807868A00F6D6E7 /* ExtensionView.swift */,
 				F9158A2228078E4700F6D6E7 /* StatusTransacoes.swift */,
 				F9DA6A9E2808EB8800AD4BCD /* Opcao.swift */,
 				F9CE7D3A280A269D008317DB /* CardRetangulo.swift */,
@@ -179,12 +175,20 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F9C80139280AFBF000CB209F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F977FD3227F26B3900018684 /* ExtensionColor.swift */,
+				F9158A1C2807868A00F6D6E7 /* ExtensionView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		F9CE7D41280A32B9008317DB /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
 				F9BF418527F505B5002A5AEB /* MockListaTransacoes.json */,
 				F9158A1F28078DAF00F6D6E7 /* MockListaTransacoesRealizadas.json */,
-				F9CE7D44280A36A7008317DB /* MockRelatorios.json */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -197,6 +201,8 @@
 				F92D9C7527F66634007152EB /* CardTransacaoView.swift */,
 				F9E42C192806423A004C559E /* RelatoriosView.swift */,
 				F9E42C1C28064447004C559E /* HeaderView.swift */,
+				F9C80135280AF99100CB209F /* CardTransacaoView-ViewModel.swift */,
+				F9C8013B280B098600CB209F /* RelatoriosView-ViewModel.swift */,
 			);
 			path = "Tela Inicial";
 			sourceTree = "<group>";
@@ -207,6 +213,8 @@
 				F9829AAA2808D1680084965B /* MenuOpcoesView.swift */,
 				F9BF418227F502FD002A5AEB /* TesteCarroselView.swift */,
 				F9CE7D37280A25D7008317DB /* CardRetanguloView.swift */,
+				F9E42C1328063ECD004C559E /* RemoteImageView.swift */,
+				F9E42C1428063ECD004C559E /* TesteLoadImageView.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -284,7 +292,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9BF418627F505B5002A5AEB /* MockListaTransacoes.json in Resources */,
-				F9CE7D45280A36A7008317DB /* MockRelatorios.json in Resources */,
 				F977FD1B27F2636400018684 /* LaunchScreen.storyboard in Resources */,
 				F977FD2D27F2654600018684 /* Quicksand-SemiBold.ttf in Resources */,
 				F977FD1827F2636400018684 /* Preview Assets.xcassets in Resources */,
@@ -304,11 +311,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9E42C2728064AC8004C559E /* ViewModifiers.swift in Sources */,
 				F977FD0F27F2636100018684 /* AppDelegate.swift in Sources */,
 				F92D9C7927F67254007152EB /* Dados.swift in Sources */,
 				F92D9C7C27F67284007152EB /* Transacao.swift in Sources */,
 				F9DA6A9F2808EB8800AD4BCD /* Opcao.swift in Sources */,
+				F9C8013C280B098600CB209F /* RelatoriosView-ViewModel.swift in Sources */,
 				F9BF418327F502FD002A5AEB /* TesteCarroselView.swift in Sources */,
 				F977FD3C27F26E1B00018684 /* CardSaldoView.swift in Sources */,
 				F9158A1D2807868A00F6D6E7 /* ExtensionView.swift in Sources */,
@@ -321,6 +328,7 @@
 				F9E42C1528063ECD004C559E /* RemoteImageView.swift in Sources */,
 				F9158A272807917F00F6D6E7 /* TransacaoRealizada.swift in Sources */,
 				F9E42C1A2806423A004C559E /* RelatoriosView.swift in Sources */,
+				F9C80136280AF99100CB209F /* CardTransacaoView-ViewModel.swift in Sources */,
 				F9CE7D3B280A269D008317DB /* CardRetangulo.swift in Sources */,
 				F977FD3327F26B3900018684 /* ExtensionColor.swift in Sources */,
 				F9158A2328078E4700F6D6E7 /* StatusTransacoes.swift in Sources */,

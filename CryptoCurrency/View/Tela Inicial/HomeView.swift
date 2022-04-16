@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    @ObservedObject var viewModel = RelatoriosViewModel()
+    
     var body: some View {
         NavigationView {
             GeometryReader { view in
@@ -46,7 +48,7 @@ struct HomeView: View {
                         .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
                         .padding(EdgeInsets(top: 30.0, leading: 15.0, bottom: 0, trailing: 0))
                         
-                        ForEach(listaRelatorios) { relatorio in
+                        ForEach(viewModel.listaRelatorios) { relatorio in
                             RelatoriosView(relatorio: relatorio)
                         }
                         .padding(.top, 15.0)

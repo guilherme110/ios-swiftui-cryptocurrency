@@ -9,7 +9,6 @@ import Foundation
 
 let transacoes: [Transacao] = load("MockListaTransacoes.json")
 let transacoesRealizadas: [TransacaoRealizada] = load("MockListaTransacoesRealizadas.json")
-let listaRelatorios: [Relatorio] = load("MockRelatorios.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
