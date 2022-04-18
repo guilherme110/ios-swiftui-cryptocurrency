@@ -96,7 +96,9 @@ struct DetalheTransacaoView: View {
 
 struct DetalheTransacaoView_Previews: PreviewProvider {
     static var previews: some View {
-        DetalheTransacaoView(transacao: transacoesRealizadas[0])
+        let transacaoRealizadaTeste = TransacaoRealizada(id: 1, origem: "Origem Teste", autor: "Autor Teste", numeroTransacao: "99999999999", tipo: "Tipo Teste", status: 1)
+        
+        DetalheTransacaoView(transacao: transacaoRealizadaTeste)
             .previewLayout(.fixed(width: 400, height: 250))
     }
 }

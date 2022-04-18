@@ -8,6 +8,7 @@
 import SwiftUI
 import WrappingHStack
 
+//MARK: - Funções Internas
 
 fileprivate func criaMenuOpcoes() -> [Opcao] {
     let opcao1 = Opcao(selecionada: true, texto: "Lançadas")
@@ -26,7 +27,11 @@ fileprivate func carregaDadosCards() -> [CardRetangulo] {
     return [cardRetangulo1, cardRetangulo2, cardRetangulo3, cardRetangulo4, cardRetangulo5]
 }
 
+//MARK: - Struct View
+
 struct TransacoesView: View {
+    @ObservedObject var viewModel = TransacaoViewModel()
+    
     var menuOpcoes = criaMenuOpcoes()
     var listaCardsRetangulo = carregaDadosCards()
     
@@ -57,7 +62,7 @@ struct TransacoesView: View {
                         .padding(.top, 30.0)
                         .padding(.bottom, 20.0)
                     
-                    ForEach(transacoesRealizadas, id: \.self) { transacao in
+                    ForEach(viewModel.transacoesRealizadas, id: \.self) { transacao in
                         Divider()
                         
                         DetalheTransacaoView(transacao: transacao)

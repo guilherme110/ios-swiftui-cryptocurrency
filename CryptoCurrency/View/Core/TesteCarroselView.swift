@@ -116,13 +116,16 @@ private struct TestStruct: Identifiable, Hashable {
 }
 struct TesteCarroselView_Previews: PreviewProvider {
     static var previews: some View {
+        let usuarioTeste = Usuario(urlImg1: "https://cdn.pixabay.com/photo/2016/11/21/14/53/adult-1845814_960_720.jpg", urlImg2: "https://cdn.pixabay.com/photo/2016/11/21/14/53/adult-1845814_960_720.jpg", urlImg3: "https://cdn.pixabay.com/photo/2016/11/21/14/53/adult-1845814_960_720.jpg")
+        let transacaoTeste = Transacao(id: 1, titulo: "Teste", subtitulo: "Subtitulo Teste", tipoAcao: "Tipo ação", usuarios: usuarioTeste)
+        
         return TesteCarroselView(
             spacing: -30,
             itemsData: [TestStruct(), TestStruct(), TestStruct(), TestStruct()],
             zoomFactor: 0.7
         ) { itemData in
             // this view is wrapped in VStack with proper width
-            CardTransacaoView(transacao: transacoes[0])
+            CardTransacaoView(transacao: transacaoTeste)
         }
         .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
     }

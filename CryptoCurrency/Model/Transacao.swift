@@ -17,6 +17,6 @@ struct Transacao: Hashable, Codable, Identifiable {
 
 struct Usuario: Hashable, Codable {
     var urlImg1: String
-    var urlImg3: String
     var urlImg2: String
+    var urlImg3: String
 }

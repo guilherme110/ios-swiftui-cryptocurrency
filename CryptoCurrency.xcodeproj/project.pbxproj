@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91B4631DB7BC923B490140C8 /* Pods_CryptoCurrency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D65169D97856B1A21C6DA0D1 /* Pods_CryptoCurrency.framework */; };
 		F9158A1A2807820F00F6D6E7 /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = F9158A192807820F00F6D6E7 /* WrappingHStack */; };
 		F9158A1D2807868A00F6D6E7 /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9158A1C2807868A00F6D6E7 /* ExtensionView.swift */; };
 		F9158A2028078DAF00F6D6E7 /* MockListaTransacoesRealizadas.json in Resources */ = {isa = PBXBuildFile; fileRef = F9158A1F28078DAF00F6D6E7 /* MockListaTransacoesRealizadas.json */; };
@@ -30,22 +31,27 @@
 		F977FD3C27F26E1B00018684 /* CardSaldoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F977FD3B27F26E1A00018684 /* CardSaldoView.swift */; };
 		F9829AAB2808D1680084965B /* MenuOpcoesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9829AAA2808D1680084965B /* MenuOpcoesView.swift */; };
 		F9961A6A28086E3400FA3375 /* DetalheTransacaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9961A6928086E3400FA3375 /* DetalheTransacaoView.swift */; };
+		F9B920CE280E1689001BC2EA /* RelatorioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B920CD280E1689001BC2EA /* RelatorioService.swift */; };
+		F9B920D1280E169E001BC2EA /* HomeView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B920D0280E169E001BC2EA /* HomeView-ViewModel.swift */; };
+		F9B920D4280E1C0C001BC2EA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B920D3280E1C0C001BC2EA /* NetworkError.swift */; };
+		F9B920D8280E2209001BC2EA /* TransacaoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B920D7280E2209001BC2EA /* TransacaoService.swift */; };
 		F9BF418327F502FD002A5AEB /* TesteCarroselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BF418227F502FD002A5AEB /* TesteCarroselView.swift */; };
 		F9BF418627F505B5002A5AEB /* MockListaTransacoes.json in Resources */ = {isa = PBXBuildFile; fileRef = F9BF418527F505B5002A5AEB /* MockListaTransacoes.json */; };
-		F9C80136280AF99100CB209F /* CardTransacaoView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C80135280AF99100CB209F /* CardTransacaoView-ViewModel.swift */; };
-		F9C8013C280B098600CB209F /* RelatoriosView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C8013B280B098600CB209F /* RelatoriosView-ViewModel.swift */; };
+		F9C80136280AF99100CB209F /* TransacaoView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C80135280AF99100CB209F /* TransacaoView-ViewModel.swift */; };
 		F9CE7D38280A25D7008317DB /* CardRetanguloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE7D37280A25D7008317DB /* CardRetanguloView.swift */; };
 		F9CE7D3B280A269D008317DB /* CardRetangulo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE7D3A280A269D008317DB /* CardRetangulo.swift */; };
 		F9CE7D48280A3D8C008317DB /* Relatorio.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE7D47280A3D8C008317DB /* Relatorio.swift */; };
 		F9DA6A9F2808EB8800AD4BCD /* Opcao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DA6A9E2808EB8800AD4BCD /* Opcao.swift */; };
 		F9E42C1528063ECD004C559E /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C1328063ECD004C559E /* RemoteImageView.swift */; };
-		F9E42C1628063ECD004C559E /* TesteLoadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C1428063ECD004C559E /* TesteLoadImageView.swift */; };
 		F9E42C1A2806423A004C559E /* RelatoriosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C192806423A004C559E /* RelatoriosView.swift */; };
 		F9E42C1D28064447004C559E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C1C28064447004C559E /* HeaderView.swift */; };
 		F9E42C232806458B004C559E /* TransacoesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E42C222806458B004C559E /* TransacoesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		330DC78D9D69A72362AB4D1A /* Pods-CryptoCurrency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoCurrency.release.xcconfig"; path = "Target Support Files/Pods-CryptoCurrency/Pods-CryptoCurrency.release.xcconfig"; sourceTree = "<group>"; };
+		A696D5180478C90B86FEEE3B /* Pods-CryptoCurrency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoCurrency.debug.xcconfig"; path = "Target Support Files/Pods-CryptoCurrency/Pods-CryptoCurrency.debug.xcconfig"; sourceTree = "<group>"; };
+		D65169D97856B1A21C6DA0D1 /* Pods_CryptoCurrency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoCurrency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9158A1C2807868A00F6D6E7 /* ExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
 		F9158A1F28078DAF00F6D6E7 /* MockListaTransacoesRealizadas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockListaTransacoesRealizadas.json; sourceTree = "<group>"; };
 		F9158A2228078E4700F6D6E7 /* StatusTransacoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTransacoes.swift; sourceTree = "<group>"; };
@@ -70,16 +76,18 @@
 		F977FD3B27F26E1A00018684 /* CardSaldoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSaldoView.swift; sourceTree = "<group>"; };
 		F9829AAA2808D1680084965B /* MenuOpcoesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOpcoesView.swift; sourceTree = "<group>"; };
 		F9961A6928086E3400FA3375 /* DetalheTransacaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheTransacaoView.swift; sourceTree = "<group>"; };
+		F9B920CD280E1689001BC2EA /* RelatorioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatorioService.swift; sourceTree = "<group>"; };
+		F9B920D0280E169E001BC2EA /* HomeView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView-ViewModel.swift"; sourceTree = "<group>"; };
+		F9B920D3280E1C0C001BC2EA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F9B920D7280E2209001BC2EA /* TransacaoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransacaoService.swift; sourceTree = "<group>"; };
 		F9BF418227F502FD002A5AEB /* TesteCarroselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteCarroselView.swift; sourceTree = "<group>"; };
 		F9BF418527F505B5002A5AEB /* MockListaTransacoes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockListaTransacoes.json; sourceTree = "<group>"; };
-		F9C80135280AF99100CB209F /* CardTransacaoView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardTransacaoView-ViewModel.swift"; sourceTree = "<group>"; };
-		F9C8013B280B098600CB209F /* RelatoriosView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RelatoriosView-ViewModel.swift"; sourceTree = "<group>"; };
+		F9C80135280AF99100CB209F /* TransacaoView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransacaoView-ViewModel.swift"; sourceTree = "<group>"; };
 		F9CE7D37280A25D7008317DB /* CardRetanguloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRetanguloView.swift; sourceTree = "<group>"; };
 		F9CE7D3A280A269D008317DB /* CardRetangulo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRetangulo.swift; sourceTree = "<group>"; };
 		F9CE7D47280A3D8C008317DB /* Relatorio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relatorio.swift; sourceTree = "<group>"; };
 		F9DA6A9E2808EB8800AD4BCD /* Opcao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opcao.swift; sourceTree = "<group>"; };
 		F9E42C1328063ECD004C559E /* RemoteImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
-		F9E42C1428063ECD004C559E /* TesteLoadImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TesteLoadImageView.swift; sourceTree = "<group>"; };
 		F9E42C192806423A004C559E /* RelatoriosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatoriosView.swift; sourceTree = "<group>"; };
 		F9E42C1C28064447004C559E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		F9E42C222806458B004C559E /* TransacoesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransacoesView.swift; sourceTree = "<group>"; };
@@ -91,17 +99,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9158A1A2807820F00F6D6E7 /* WrappingHStack in Frameworks */,
+				91B4631DB7BC923B490140C8 /* Pods_CryptoCurrency.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BEF9C19EF0CF88FB8864ADE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A696D5180478C90B86FEEE3B /* Pods-CryptoCurrency.debug.xcconfig */,
+				330DC78D9D69A72362AB4D1A /* Pods-CryptoCurrency.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC33B62E81387DD074D68234 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D65169D97856B1A21C6DA0D1 /* Pods_CryptoCurrency.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F977FD0227F2636000018684 = {
 			isa = PBXGroup;
 			children = (
 				F977FD0D27F2636100018684 /* CryptoCurrency */,
 				F977FD0C27F2636100018684 /* Products */,
+				5BEF9C19EF0CF88FB8864ADE /* Pods */,
+				AC33B62E81387DD074D68234 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +146,8 @@
 			children = (
 				F977FD2F27F2666300018684 /* Model */,
 				F977FD3027F2666A00018684 /* View */,
+				F9B920C6280E05C0001BC2EA /* ViewModel */,
+				F9B920CC280E1662001BC2EA /* Service */,
 				F977FD2327F2652E00018684 /* Fontes */,
 				F9C80139280AFBF000CB209F /* Extension */,
 				F977FD0E27F2636100018684 /* AppDelegate.swift */,
@@ -161,6 +191,7 @@
 				F9DA6A9E2808EB8800AD4BCD /* Opcao.swift */,
 				F9CE7D3A280A269D008317DB /* CardRetangulo.swift */,
 				F9CE7D47280A3D8C008317DB /* Relatorio.swift */,
+				F9B920D3280E1C0C001BC2EA /* NetworkError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +204,24 @@
 				F9E42C1F28064556004C559E /* Tela Inicial */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F9B920C6280E05C0001BC2EA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F9C80135280AF99100CB209F /* TransacaoView-ViewModel.swift */,
+				F9B920D0280E169E001BC2EA /* HomeView-ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F9B920CC280E1662001BC2EA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F9B920CD280E1689001BC2EA /* RelatorioService.swift */,
+				F9B920D7280E2209001BC2EA /* TransacaoService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		F9C80139280AFBF000CB209F /* Extension */ = {
@@ -201,8 +250,6 @@
 				F92D9C7527F66634007152EB /* CardTransacaoView.swift */,
 				F9E42C192806423A004C559E /* RelatoriosView.swift */,
 				F9E42C1C28064447004C559E /* HeaderView.swift */,
-				F9C80135280AF99100CB209F /* CardTransacaoView-ViewModel.swift */,
-				F9C8013B280B098600CB209F /* RelatoriosView-ViewModel.swift */,
 			);
 			path = "Tela Inicial";
 			sourceTree = "<group>";
@@ -214,7 +261,6 @@
 				F9BF418227F502FD002A5AEB /* TesteCarroselView.swift */,
 				F9CE7D37280A25D7008317DB /* CardRetanguloView.swift */,
 				F9E42C1328063ECD004C559E /* RemoteImageView.swift */,
-				F9E42C1428063ECD004C559E /* TesteLoadImageView.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -235,9 +281,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F977FD1F27F2636400018684 /* Build configuration list for PBXNativeTarget "CryptoCurrency" */;
 			buildPhases = (
+				C582EEC214BB2C1AE7D10BB8 /* [CP] Check Pods Manifest.lock */,
 				F977FD0727F2636000018684 /* Sources */,
 				F977FD0827F2636000018684 /* Frameworks */,
 				F977FD0927F2636000018684 /* Resources */,
+				C987404D65E235B5DE31A45F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -306,29 +354,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C582EEC214BB2C1AE7D10BB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoCurrency-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C987404D65E235B5DE31A45F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoCurrency/Pods-CryptoCurrency-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoCurrency/Pods-CryptoCurrency-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoCurrency/Pods-CryptoCurrency-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F977FD0727F2636000018684 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F977FD0F27F2636100018684 /* AppDelegate.swift in Sources */,
+				F9B920D4280E1C0C001BC2EA /* NetworkError.swift in Sources */,
 				F92D9C7927F67254007152EB /* Dados.swift in Sources */,
+				F9B920D1280E169E001BC2EA /* HomeView-ViewModel.swift in Sources */,
 				F92D9C7C27F67284007152EB /* Transacao.swift in Sources */,
 				F9DA6A9F2808EB8800AD4BCD /* Opcao.swift in Sources */,
-				F9C8013C280B098600CB209F /* RelatoriosView-ViewModel.swift in Sources */,
 				F9BF418327F502FD002A5AEB /* TesteCarroselView.swift in Sources */,
 				F977FD3C27F26E1B00018684 /* CardSaldoView.swift in Sources */,
 				F9158A1D2807868A00F6D6E7 /* ExtensionView.swift in Sources */,
 				F977FD1127F2636100018684 /* SceneDelegate.swift in Sources */,
+				F9B920CE280E1689001BC2EA /* RelatorioService.swift in Sources */,
 				F92D9C7627F66634007152EB /* CardTransacaoView.swift in Sources */,
 				F977FD1327F2636100018684 /* HomeView.swift in Sources */,
 				F9CE7D48280A3D8C008317DB /* Relatorio.swift in Sources */,
-				F9E42C1628063ECD004C559E /* TesteLoadImageView.swift in Sources */,
 				F9CE7D38280A25D7008317DB /* CardRetanguloView.swift in Sources */,
 				F9E42C1528063ECD004C559E /* RemoteImageView.swift in Sources */,
 				F9158A272807917F00F6D6E7 /* TransacaoRealizada.swift in Sources */,
 				F9E42C1A2806423A004C559E /* RelatoriosView.swift in Sources */,
-				F9C80136280AF99100CB209F /* CardTransacaoView-ViewModel.swift in Sources */,
+				F9C80136280AF99100CB209F /* TransacaoView-ViewModel.swift in Sources */,
+				F9B920D8280E2209001BC2EA /* TransacaoService.swift in Sources */,
 				F9CE7D3B280A269D008317DB /* CardRetangulo.swift in Sources */,
 				F977FD3327F26B3900018684 /* ExtensionColor.swift in Sources */,
 				F9158A2328078E4700F6D6E7 /* StatusTransacoes.swift in Sources */,
@@ -471,6 +563,7 @@
 		};
 		F977FD2027F2636400018684 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A696D5180478C90B86FEEE3B /* Pods-CryptoCurrency.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -491,6 +584,7 @@
 		};
 		F977FD2127F2636400018684 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 330DC78D9D69A72362AB4D1A /* Pods-CryptoCurrency.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

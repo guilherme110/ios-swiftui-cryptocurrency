@@ -29,7 +29,6 @@ struct CardSaldoView: View {
                     .foregroundColor(.grey500)
                     .padding(.leading, 30.0)
                     .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                    
                 
                 HStack {
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
@@ -66,7 +65,6 @@ struct CardSaldoView: View {
                         .frame(width: 80, height: 50)
                         .overlay(RoundedRectangle(cornerRadius: 9).stroke(Color.grey200, lineWidth: 2))
                         .background(Color.lightBlue)
-                    
                     
                     Spacer()
                 }

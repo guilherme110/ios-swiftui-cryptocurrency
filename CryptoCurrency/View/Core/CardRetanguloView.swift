@@ -31,9 +31,6 @@ struct CardRetanguloView: View {
             )
             .frame(width: 100, height: 120, alignment: .leading)
             .if(cardRetangulo.addBorda) { $0.addBorder(Color.black, cornerRadius: 10) }
-            
-           
-        
     }
 }
 

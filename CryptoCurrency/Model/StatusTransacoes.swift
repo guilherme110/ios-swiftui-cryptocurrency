@@ -8,7 +8,7 @@
 import Foundation
 
 protocol NomeStatus  {
-      var nomeStatus: String { get }
+    var nomeStatus: String { get }
 }
 
 enum StatusTransacoes : Int, NomeStatus {

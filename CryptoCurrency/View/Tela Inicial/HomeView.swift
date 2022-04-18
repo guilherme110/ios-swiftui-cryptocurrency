@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct HomeView: View {
-    @ObservedObject var viewModel = RelatoriosViewModel()
+    @ObservedObject var viewModel = HomeViewModel()
     
     var body: some View {
+        
         NavigationView {
             GeometryReader { view in
                 ScrollView {
@@ -23,7 +24,7 @@ struct HomeView: View {
                         
                         TesteCarroselView(
                             spacing: -50,
-                            itemsData: transacoes,
+                            itemsData: viewModel.listaTransacoes,
                             zoomFactor: 0.65
                         ) { itemData in
                             CardTransacaoView(transacao: itemData)

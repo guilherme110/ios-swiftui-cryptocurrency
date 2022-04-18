@@ -118,7 +118,10 @@ struct CardTransacaoView: View {
 
 struct CardTransacaoView_Previews: PreviewProvider {
     static var previews: some View {
-        CardTransacaoView(transacao: transacoes[1])
+        let usuarioTeste = Usuario(urlImg1: "https://cdn.pixabay.com/photo/2016/11/21/14/53/adult-1845814_960_720.jpg", urlImg2: "https://cdn.pixabay.com/photo/2016/11/21/14/53/adult-1845814_960_720.jpg", urlImg3: "https://cdn.pixabay.com/photo/2016/11/21/14/53/adult-1845814_960_720.jpg")
+        let transacaoTeste = Transacao(id: 1, titulo: "Teste", subtitulo: "Subtitulo Teste", tipoAcao: "Tipo ação", usuarios: usuarioTeste )
+        
+        CardTransacaoView(transacao: transacaoTeste)
             .previewLayout(.fixed(width: 250, height: 150))
     }
 }
