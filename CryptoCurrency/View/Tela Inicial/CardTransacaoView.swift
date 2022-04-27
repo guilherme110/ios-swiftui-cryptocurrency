@@ -34,58 +34,27 @@ struct CardTransacaoView: View {
                     
                     ZStack {
                         
-                        let someUrl = URL(string: transacao.usuarios.urlImg1)
-                        if let url = someUrl {
-                            RemoteImageView(
-                              url: url,
-                              placeholder: {
-                                Image("placeholder")
-                              },
-                              image: {
-                                  $0.resizable()
-                                      .frame(width: 40, height: 40)
-                                      .clipShape(Circle())
-                                      .overlay(Circle().stroke(Color.grey200, lineWidth:2))
-                                      .padding(.leading, 120.0)
-                                  
-                              }
-                            )
-                        }
+                        //TODO: - Necessário calcular a distancia
+                        let distancia = 180
                         
-                        let someUrl2 = URL(string: transacao.usuarios.urlImg2)
-                        if let url = someUrl2 {
-                            RemoteImageView(
-                              url: url,
-                              placeholder: {
-                                Image("placeholder")
-                              },
-                              image: {
-                                  $0.resizable()
-                                      .frame(width: 40, height: 40)
-                                      .clipShape(Circle())
-                                      .overlay(Circle().stroke(Color.grey200, lineWidth:2))
-                                      .padding(.leading, 60.0)
-                                  
-                              }
-                            )
-                        }
-                        
-                        let someUrl3 = URL(string: transacao.usuarios.urlImg3)
-                        if let url = someUrl3 {
-                            RemoteImageView(
-                              url: url,
-                              placeholder: {
-                                Image("placeholder")
-                              },
-                              image: {
-                                  $0.resizable()
-                                      .frame(width: 40, height: 40)
-                                      .clipShape(Circle())
-                                      .overlay(Circle().stroke(Color.grey200, lineWidth:2))
-                                      .padding(.leading, 0.0)
-                                  
-                              }
-                            )
+                        ForEach(Array(transacao.usuarios.enumerated()), id: \.offset) { index, urlUsuario in
+                            let someUrl = URL(string: urlUsuario)
+                            if let url = someUrl {
+                                RemoteImageView(
+                                  url: url,
+                                  placeholder: {
+                                    Image("placeholder")
+                                  },
+                                  image: {
+                                      $0.resizable()
+                                          .frame(width: 40, height: 40)
+                                          .clipShape(Circle())
+                                          .overlay(Circle().stroke(Color.grey200, lineWidth:2))
+                                          .padding(.leading, CGFloat(distancia - (index * 60)))
+                                      
+                                  }
+                                )
+                            }
                         }
                     }
                     .frame(width: 150, alignment: .trailing)
@@ -118,7 +87,7 @@ struct CardTransacaoView: View {
 
 struct CardTransacaoView_Previews: PreviewProvider {
     static var previews: some View {
-        let usuarioTeste = Usuario(urlImg1: "https://cdn.pixabay.com/photo/2016/11/21/14/53/adult-1845814_960_720.jpg", urlImg2: "https://cdn.pixabay.com/photo/2016/11/21/14/53/adult-1845814_960_720.jpg", urlImg3: "https://cdn.pixabay.com/photo/2016/11/21/14/53/adult-1845814_960_720.jpg")
+        let usuarioTeste = ["https://cdn.pixabay.com/photo/2016/11/21/14/53/adult-1845814_960_720.jpg", "https://cdn.pixabay.com/photo/2016/11/21/14/53/adult-1845814_960_720.jpg", "https://cdn.pixabay.com/photo/2016/11/21/14/53/adult-1845814_960_720.jpg"]
         let transacaoTeste = Transacao(id: 1, titulo: "Teste", subtitulo: "Subtitulo Teste", tipoAcao: "Tipo ação", usuarios: usuarioTeste )
         
         CardTransacaoView(transacao: transacaoTeste)

@@ -116,7 +116,8 @@ private struct TestStruct: Identifiable, Hashable {
 }
 struct TesteCarroselView_Previews: PreviewProvider {
     static var previews: some View {
-        let usuarioTeste = Usuario(urlImg1: "https://cdn.pixabay.com/photo/2016/11/21/14/53/adult-1845814_960_720.jpg", urlImg2: "https://cdn.pixabay.com/photo/2016/11/21/14/53/adult-1845814_960_720.jpg", urlImg3: "https://cdn.pixabay.com/photo/2016/11/21/14/53/adult-1845814_960_720.jpg")
+        let usuarioTeste = ["https://cdn.pixabay.com/photo/2016/11/21/14/53/adult-1845814_960_720.jpg", "https://cdn.pixabay.com/photo/2016/11/21/14/53/adult-1845814_960_720.jpg", "https://cdn.pixabay.com/photo/2016/11/21/14/53/adult-1845814_960_720.jpg"]
+        
         let transacaoTeste = Transacao(id: 1, titulo: "Teste", subtitulo: "Subtitulo Teste", tipoAcao: "Tipo ação", usuarios: usuarioTeste)
         
         return TesteCarroselView(

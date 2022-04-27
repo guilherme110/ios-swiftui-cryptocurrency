@@ -12,11 +12,5 @@ struct Transacao: Hashable, Codable, Identifiable {
     var titulo: String
     var subtitulo: String
     var tipoAcao: String
-    var usuarios: Usuario
-}
-
-struct Usuario: Hashable, Codable {
-    var urlImg1: String
-    var urlImg2: String
-    var urlImg3: String
+    var usuarios: [String]
 }
